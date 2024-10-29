@@ -14,7 +14,7 @@
             </div>
             <div class="col-md-6 col-lg-6 col-xl-4">
                 <div class="footer-item">
-                    <h4 class="text-white mb-4">Maklumat Hubungan</h4>
+                    <h4 class="text-white mb-4">Contact Info</h4>
                     <div class="d-flex align-items-center">
                         <i class="fas fa-map-marker-alt text-primary me-3"></i>
                         <p class="text-white mb-0">{{ $about->address }}</p>

@@ -2,8 +2,8 @@
 <div class="container-fluid testimonial pb-5">
     <div class="container pb-5">
         <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-            <h4 class="text-primary">Ulasan</h4>
-            <h1 class="display-5 mb-4">Ulasan Pelanggan Kami</h1>
+            <h4 class="text-primary">Testimonial</h4>
+            <h1 class="display-5 mb-4">Our Clients Reviews</h1>
         </div>
         <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
             @foreach ($testimonials as $testimonial)

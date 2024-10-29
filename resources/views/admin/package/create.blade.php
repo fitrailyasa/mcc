@@ -51,7 +51,7 @@
                         @enderror
                     </div>
 
-                    {{-- <div class="mb-2">
+                    <div class="mb-2">
                         <label class="form-label">{{ __('Category') }}</label>
                         <select class="form-control @error('category_id') is-invalid @enderror" name="category_id" id="category_id" required>
                             <option value="">-- Select Category --</option>
@@ -63,7 +63,7 @@
                         @error('category_id')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
-                    </div> --}}
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('Close') }}</button>

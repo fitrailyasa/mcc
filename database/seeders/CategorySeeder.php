@@ -13,6 +13,18 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        Category::factory(10)->create();
+        // Category::factory(10)->create();
+        $data = [
+            [
+                'name' => 'Malaysia',
+                'slug' => 'ms',
+            ],
+            [
+                'name' => 'English',
+                'slug' => 'en',
+            ],
+        ];
+
+        Category::query()->insert($data);
     }
 }

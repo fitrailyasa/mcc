@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.en.app')
 
 @section('title', 'Detail Service')
 @section('services-active', 'active')
 
 @section('content')
-    @include('layouts.header-subpages')
+    @include('layouts.en.header-subpages')
     <!-- Services Start -->
     <div id="services" class="container-fluid service pb-5">
         <div class="container pb-5">
@@ -13,8 +13,8 @@
                 <h1 class="display-5 mb-4">{{ $service['name'] }}</h1>
                 <p>{{ $service['desc'] }}</p>
                 <a target="_blank" class="btn btn-primary rounded-pill py-2 mb-3 px-4"
-                    href="https://wa.me/{{ $about->whatsapp }}?text=Salam, saya nak tempah pakej {{ $service['name'] }}">Book
-                    Sekarang</a>
+                    href="https://wa.me/{{ $about->whatsapp }}?text=Hello, I want to order a package {{ $service['name'] }}">Book
+                    Now</a>
                 <img class="img img-fluid rounded" src="{{ asset('storage/' . $service['img']) }}" alt="">
             </div>
         </div>

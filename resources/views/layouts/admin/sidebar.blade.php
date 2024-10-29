@@ -22,14 +22,30 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route('about.edit', '1') }}"
-                        class="nav-link {{ Request::routeIs('about.edit', '1') ? 'aktif' : '' }}">
+                <li class="nav-item {{ Request::routeIs('about.edit', '1') || Request::routeIs('about.edit', '2') ? 'menu-open' : '' }}">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-address-card"></i>
                         <p>
                             Profile
+                            <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('about.edit', '1') }}"
+                                class="nav-link {{ Request::routeIs('about.edit', '1') ? 'aktif' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Profile Malaysia</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('about.edit', '2') }}"
+                                class="nav-link {{ Request::routeIs('about.edit', '2') ? 'aktif' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Profile English</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 {{-- <li class="nav-item">
                     <a href="{{ route('category.index') }}"

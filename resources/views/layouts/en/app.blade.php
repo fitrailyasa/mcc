@@ -90,7 +90,7 @@
                     <div class="dropdown me-4">
                         <a class="text-muted small dropdown-toggle" href="#" role="button" id="languageDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-globe text-primary me-2"></i>Pilihan Bahasa
+                            <i class="fas fa-globe text-primary me-2"></i>Select Language
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                             <li><a class="dropdown-item" href="/">Malaysian</a></li>
@@ -119,7 +119,7 @@
 
     @yield('content')
 
-    @include('layouts.footer')
+    @include('layouts.en.footer')
 
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">

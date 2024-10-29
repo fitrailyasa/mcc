@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HomeEnController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\CategoryController;
@@ -22,6 +23,14 @@ Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/services/{slug}', [HomeController::class, 'servicesDetail'])->name('services-detail');
 Route::get('/feedback', [HomeController::class, 'feedback'])->name('feedback');
 Route::post('/feedback', [HomeController::class, 'feedbackStore'])->name('feedbackStore');
+
+Route::get('/en', [HomeEnController::class, 'index'])->name('home-en');
+Route::get('/en/about', [HomeEnController::class, 'about'])->name('about-en');
+Route::get('/en/contact', [HomeEnController::class, 'contact'])->name('contact-en');
+Route::get('/en/services', [HomeEnController::class, 'services'])->name('services-en');
+Route::get('/en/services/{slug}', [HomeEnController::class, 'servicesDetail'])->name('services-detail-en');
+Route::get('/en/feedback', [HomeEnController::class, 'feedback'])->name('feedback-en');
+Route::post('/en/feedback', [HomeEnController::class, 'feedbackStore'])->name('feedbackStore-en');
 
 Auth::routes([
     'register' => false,

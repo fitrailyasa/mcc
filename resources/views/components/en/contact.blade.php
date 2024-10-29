@@ -5,7 +5,7 @@
             <div class="col-xl-6">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
                     <div class="bg-light rounded p-5 mb-5">
-                        <h4 class="text-primary mb-4">Berhubung</h4>
+                        <h4 class="text-primary mb-4">Get in Touch</h4>
                         <div class="row g-4">
                             <div class="col-md-12">
                                 <div class="contact-add-item">
@@ -13,7 +13,7 @@
                                         <i class="fas fa-map-marker-alt fa-2x"></i>
                                     </div>
                                     <div>
-                                        <h4>Alamat</h4>
+                                        <h4>Address</h4>
                                         <p class="mb-0">{{ $about->address }}</p>
                                     </div>
                                 </div>
@@ -24,7 +24,7 @@
                                         <i class="fas fa-envelope fa-2x"></i>
                                     </div>
                                     <div>
-                                        <h4>Mail Kami</h4>
+                                        <h4>Mail Us</h4>
                                         <p class="mb-0">{{ $about->email }}</p>
                                     </div>
                                 </div>
@@ -43,39 +43,39 @@
                         </div>
                     </div>
                     <div class="bg-light p-5 rounded h-100 wow fadeInUp" data-wow-delay="0.2s">
-                        <h4 class="text-primary">Hantar Mesej Anda</h4>
+                        <h4 class="text-primary">Send Your Message</h4>
                         <form>
                             <div class="row g-4">
                                 <div class="col-lg-12 col-xl-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control border-0" id="name"
-                                            placeholder="Nama Anda">
-                                        <label for="name">Nama Anda</label>
+                                            placeholder="Your Name">
+                                        <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-xl-6">
                                     <div class="form-floating">
                                         <input type="email" class="form-control border-0" id="email"
-                                            placeholder="Email Anda">
-                                        <label for="email">Email Anda</label>
+                                            placeholder="Your Email">
+                                        <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-floating">
                                         <input type="phone" class="form-control border-0" id="phone"
-                                            placeholder="Phone Anda">
-                                        <label for="phone">Phone Anda</label>
+                                            placeholder="Phone">
+                                        <label for="phone">Your Phone</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
-                                        <label for="message">Mesej</label>
+                                        <label for="message">Message</label>
                                     </div>
 
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3">Send Mesej</button>
+                                    <button class="btn btn-primary w-100 py-3">Send Message</button>
                                 </div>
                             </div>
                         </form>
