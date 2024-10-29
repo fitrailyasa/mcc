@@ -4,7 +4,7 @@
 @section('feedback-active', 'active')
 
 @section('content')
-    @include('layoutse.en.header-subpages')
+    @include('layouts.en.header-subpages')
     @include('components.en.feedback')
     @include('components.en.services')
 @endsection

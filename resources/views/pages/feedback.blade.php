@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Form Feedback')
+@section('title', 'Form Ulasan')
 @section('feedback-active', 'active')
 
 @section('content')

@@ -8,11 +8,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
-            <a href="{{ route('home') }}" class="nav-item nav-link @yield('home-active')">Home</a>
-            <a href="{{ route('about') }}" class="nav-item nav-link @yield('about-active')">About</a>
-            <a href="{{ route('services') }}" class="nav-item nav-link @yield('service-active')">Services</a>
-            <a href="{{ route('contact') }}" class="nav-item nav-link">Contact Us</a>
-            <a href="{{ route('feedback') }}" class="nav-item nav-link">Feedback</a>
+            <a href="{{ route('home-en') }}" class="nav-item nav-link @yield('home-active')">Home</a>
+            <a href="{{ route('about-en') }}" class="nav-item nav-link @yield('about-active')">About</a>
+            <a href="{{ route('services-en') }}" class="nav-item nav-link @yield('service-active')">Services</a>
+            <a href="{{ route('contact-en') }}" class="nav-item nav-link">Contact Us</a>
+            <a href="{{ route('feedback-en') }}" class="nav-item nav-link">Feedback</a>
         </div>
         <a href="#services" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Book Now</a>
     </div>

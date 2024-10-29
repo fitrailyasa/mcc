@@ -35,7 +35,7 @@
                     </div>
                     <div class="form-group mb-3">
                         <label for="Ulasan Anda....">Ulasan <span class="text-danger">*</span></label>
-                        <textarea class="form-control" id="review" name="review" rows="5" placeholder="review"></textarea>
+                        <textarea class="form-control" id="review" name="review" rows="5" placeholder="ulasan..."></textarea>
                     </div>
                     <div class="text-center">
                         <button class="btn btn-primary py-3 px-5" type="submit">Send Ulasan</button>
