@@ -18,8 +18,8 @@
                                 <p class="mb-5 fs-5">{{ $about[0]->description }}
                                 </p>
                                 <div class="d-flex justify-content-center flex-shrink-0 mb-4">
-                                    <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i
-                                            class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                    {{-- <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i
+                                            class="fas fa-play-circle me-2"></i> Watch Video</a> --}}
                                     <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#services">Book
                                         Now</a>
                                 </div>

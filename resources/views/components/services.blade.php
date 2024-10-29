@@ -7,17 +7,16 @@
         </div>
         <div class="row g-4">
             @foreach ($services as $index => $service)
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="{{ 0.2 + ($index % 3) * 0.2 }}s">
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="{{ 0.2 + ($index % 3) * 0.2 }}s">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="{{ asset($service['img']) }}" class="img-fluid rounded-top w-100" alt="Image">
+                            <img src="{{ asset('storage/' . $service['img']) }}" class="img-fluid rounded-top w-100" alt="Image">
                         </div>
                         <div class="rounded-bottom p-4">
-                            <a href="{{ $service['slug'] }}" class="h4 d-inline-block mb-4">{{ $service['name'] }}</a>
-                            <h3>RM {{ $service['price'] }}</h3>
+                            <a href="{{ route('services-detail', $service['slug']) }}" class="h4 d-inline-block mb-4">{{ $service['name'] }}</a>
+                            {{-- <h3>RM {{ $service['price'] }}</h3> --}}
                             <p class="mb-4">{{ $service['desc'] }}</p>
-                            <a target="_blank" class="btn btn-primary rounded-pill py-2 px-4" href="https://wa.me/{{ $about[0]->whatsapp }}?text=Hello, I want to order a package {{ $service['name'] }}">Book
-                                Now</a>
+                            <a target="_blank" class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('services-detail', $service['slug']) }}">Detail</a>
                         </div>
                     </div>
                 </div>

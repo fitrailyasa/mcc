@@ -19,6 +19,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/services', [HomeController::class, 'services'])->name('services');
+Route::get('/services/{slug}', [HomeController::class, 'servicesDetail'])->name('services-detail');
 Route::get('/feedback', [HomeController::class, 'feedback'])->name('feedback');
 Route::post('/feedback', [HomeController::class, 'feedbackStore'])->name('feedbackStore');
 

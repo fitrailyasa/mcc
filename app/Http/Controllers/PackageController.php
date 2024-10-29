@@ -21,9 +21,9 @@ class PackageController extends Controller
         $request->validate([
             'name' => 'required|max:50',
             'desc' => 'required|max:500',
-            'price' => 'required|numeric|max:10000',
+            'price' => 'nullable|numeric|max:10000',
             'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'category_id' => 'required',
+            'category_id' => 'nullable',
         ]);
         $package = Package::create($request->all());
 
@@ -38,9 +38,9 @@ class PackageController extends Controller
         $request->validate([
             'name' => 'required|max:50',
             'desc' => 'required|max:500',
-            'price' => 'required|numeric|max:10000',
+            'price' => 'nullable|numeric|max:10000',
             'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'category_id' => 'required',
+            'category_id' => 'nullable',
         ]);
 
         $package = Package::where('id', $id)->first();

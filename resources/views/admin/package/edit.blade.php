@@ -34,7 +34,7 @@
                         @enderror
                     </div>
 
-                    <div class="mb-2">
+                    {{-- <div class="mb-2">
                         <label class="form-label">{{ __('Price') }}</label>
                         <input type="number" class="form-control @error('price') is-invalid @enderror"
                                placeholder="RM Price" name="price" id="price"
@@ -42,7 +42,7 @@
                         @error('price')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
-                    </div>
+                    </div> --}}
 
                     <div class="mb-2">
                         <label class="form-label">{{ __('Image (optional)') }}</label>
@@ -53,7 +53,7 @@
                         @enderror
                     </div>
 
-                    <div class="mb-2">
+                    {{-- <div class="mb-2">
                         <label class="form-label">{{ __('Category') }}</label>
                         <select class="form-control @error('category_id') is-invalid @enderror"
                                 name="category_id" id="category_id" required>
@@ -68,7 +68,7 @@
                         @error('category_id')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('Close') }}</button>

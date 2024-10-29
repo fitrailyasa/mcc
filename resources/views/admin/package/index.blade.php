@@ -13,8 +13,9 @@
                 <th>{{ __('No') }}</th>
                 <th>{{ __('Name') }}</th>
                 <th>{{ __('Description') }}</th>
-                <th>{{ __('Price') }}</th>
-                <th class="d-none d-lg-table-cell">{{ __('Category') }}</th>
+                <th>{{ __('Image') }}</th>
+                {{-- <th>{{ __('Price') }}</th> --}}
+                {{-- <th class="d-none d-lg-table-cell">{{ __('Category') }}</th> --}}
                 <th>{{ __('Action') }}</th>
             </tr>
         </thead>
@@ -24,8 +25,11 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $package->name ?? '-' }}</td>
                     <td>{{ $package->desc ?? '-' }}</td>
-                    <td>RM {{ $package->price ?? '-' }}</td>
-                    <td class="d-none d-lg-table-cell">{{ $package->category->name ?? '-' }}</td>
+                    <td>
+                        <img class="img img-fluid" src="{{ asset('storage/' . $package->img) }}" alt="">
+                    </td>
+                    {{-- <td>RM {{ $package->price ?? '-' }}</td> --}}
+                    {{-- <td class="d-none d-lg-table-cell">{{ $package->category->name ?? '-' }}</td> --}}
                     <td class="manage-row">
                         @include('admin.package.edit')
                         @include('admin.package.delete')
@@ -38,8 +42,9 @@
                 <th>{{ __('No') }}</th>
                 <th>{{ __('Name') }}</th>
                 <th>{{ __('Description') }}</th>
-                <th>{{ __('Price') }}</th>
-                <th class="d-none d-lg-table-cell">{{ __('Category') }}</th>
+                <th>{{ __('Image') }}</th>
+                {{-- <th>{{ __('Price') }}</th> --}}
+                {{-- <th class="d-none d-lg-table-cell">{{ __('Category') }}</th> --}}
                 <th>{{ __('Action') }}</th>
             </tr>
         </tfoot>

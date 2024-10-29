@@ -50,6 +50,14 @@ class HomeController extends Controller
 
         return view('pages.services', compact('services', 'about'));
     }
+    public function servicesDetail(string $slug)
+    {
+        $about = About::first()->get();
+
+        $service = Package::where('slug', $slug)->firstOrFail();
+
+        return view('pages.services-detail', compact('service', 'about'));
+    }
 
     public function feedback()
     {

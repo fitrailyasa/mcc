@@ -31,7 +31,7 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="{{ route('category.index') }}"
                         class="nav-link {{ Request::routeIs('category.index') ? 'aktif' : '' }}">
                         <i class="nav-icon fas fa-list"></i>
@@ -39,7 +39,7 @@
                             Category
                         </p>
                     </a>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                     <a href="{{ route('package.index') }}"
                         class="nav-link {{ Request::routeIs('package.index') ? 'aktif' : '' }}">
