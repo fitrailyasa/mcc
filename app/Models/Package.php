@@ -16,6 +16,7 @@ class Package extends Model
         'name',
         'slug',
         'desc',
+        'price',
         'img',
         'category_id',
     ];

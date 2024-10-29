@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Feedback;
 use App\Models\Package;
 use Illuminate\Http\Request;
@@ -9,17 +10,10 @@ use Illuminate\Support\Facades\Log;
 
 class HomeController extends Controller
 {
-    protected $contactInfo = [
-        'description' => 'Traditional Postpartum Treatment and Care Services for Mothers and Baby',
-        'whatsapp' => '+6282279909994',
-        'instagram' => 'https://instagram.com/mutiara_confinement',
-        'facebook' => 'https://www.facebook.com/MutiaraConfinement',
-        'email' => 'tarashairsalon12@gmail.com',
-        'address' => 'Jl. Cempaka No. 10, Cempaka Putih, Jakarta Timur',
-    ];
-
+    
     public function index()
     {
+        $about = About::first()->get();
         try {
             $services = Package::all();
             $testimonials = Feedback::all();
@@ -29,21 +23,24 @@ class HomeController extends Controller
             $testimonials = collect();
         }
 
-        return view('index', array_merge($this->contactInfo, compact('services', 'testimonials')));
+        return view('index', compact('services', 'testimonials', 'about'));
     }
 
     public function about()
     {
-        return view('pages.about', $this->contactInfo);
+        $about = About::first()->get();
+        return view('pages.about', compact('about'));
     }
 
     public function contact()
     {
-        return view('pages.contact', $this->contactInfo);
+        $about = About::first()->get();
+        return view('pages.contact', compact('about'));
     }
 
     public function services()
     {
+        $about = About::first()->get();
         try {
             $services = Package::all();
         } catch (\Exception $e) {
@@ -51,12 +48,13 @@ class HomeController extends Controller
             $services = collect(); // return an empty collection on failure
         }
 
-        return view('pages.services', array_merge($this->contactInfo, compact('services')));
+        return view('pages.services', compact('services', 'about'));
     }
 
     public function feedback()
     {
-        return view('pages.feedback', $this->contactInfo);
+        $about = About::first()->get();
+        return view('pages.feedback', compact('about'));
     }
 
     public function feedbackStore(Request $request)

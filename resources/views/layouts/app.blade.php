@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>@yield('title') | {{ config('app.name') }}</title>
+    <title>@yield('title') | {{ $about[0]->title }}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -88,15 +88,15 @@
                 <div class="d-flex flex-wrap">
                     {{-- <a href="#" class="text-muted small me-4"><i
                             class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a> --}}
-                    <a href="https://wa.me/{{ $whatsapp }}" class="text-muted small me-4"><i
-                            class="fab fa-whatsapp text-primary me-2"></i>{{ $whatsapp }}</a>
+                    <a href="https://wa.me/{{ $about[0]->whatsapp }}" class="text-muted small me-4"><i
+                            class="fab fa-whatsapp text-primary me-2"></i>{{ $about[0]->whatsapp }}</a>
                     <a href="mailto:tarashairsalon12@gmail.com" class="text-muted small me-0"><i
                             class="fas fa-envelope text-primary me-2"></i>tarashairsalon12@gmail.com</a>
                 </div>
             </div>
             <div class="col-lg-4 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a href="/super/login"><small class="me-3 text-dark"><i
+                    <a href="{{ route('login') }}"><small class="me-3 text-dark"><i
                                 class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
                 </div>
             </div>
@@ -114,7 +114,7 @@
             <div class="row g-4 align-items-center">
                 <div class="col-md-12 text-center text-md-start mb-md-0">
                     <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>{{ config('app.name') }}</a>, All right
+                                class="fas fa-copyright text-light me-2"></i>{{ $about[0]->title }}</a>, All right
                         reserved.</span>
                 </div>
             </div>

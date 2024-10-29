@@ -20,6 +20,7 @@ class PackageFactory extends Factory
             'name' => fake()->name(),
             'slug' => fake()->slug(),
             'desc' => fake()->sentence(),
+            'price' => fake()->numberBetween(550, 6000),
             'img' => 'logo.png',
             'category_id' => fake()->numberBetween(1, 10),
         ];

@@ -6,9 +6,10 @@
             <div class="col-md-6 col-lg-6 col-xl-8">
                 <div class="footer-item">
                     <a href="{{ route('home') }}" class="p-0">
-                        <h4 class="text-white"><img width="50" class="img img-fluid me-3" src="{{ asset('logo.png') }}" alt="">{{ config('app.name') }}</h4>
+                        <h4 class="text-white"><img width="50" class="img img-fluid me-3"
+                                src="{{ asset('logo.png') }}" alt="">{{ $about[0]->title }}</h4>
                     </a>
-                    <p class="mb-4">{{ $description }}</p>
+                    <p class="mb-4">{{ $about[0]->description }}</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-4">
@@ -16,21 +17,21 @@
                     <h4 class="text-white mb-4">Contact Info</h4>
                     <div class="d-flex align-items-center">
                         <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                        <p class="text-white mb-0">{{ $address }}</p>
+                        <p class="text-white mb-0">{{ $about[0]->address }}</p>
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="fas fa-envelope text-primary me-3"></i>
-                        <p class="text-white mb-0">{{ $email }}</p>
+                        <p class="text-white mb-0">{{ $about[0]->email }}</p>
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="fab fa-whatsapp text-primary me-3"></i>
-                        <p class="text-white mb-0">{{ $whatsapp }}</p>
+                        <p class="text-white mb-0">{{ $about[0]->whatsapp }}</p>
                     </div>
                     <div class="d-flex mt-2">
-                        <a target="_blank" class="btn btn-primary btn-sm-square rounded-circle me-3" href="{{ $facebook }}"><i
-                                class="fab fa-facebook-f text-white"></i></a>
-                        <a target="_blank" class="btn btn-primary btn-sm-square rounded-circle me-3" href="{{ $instagram }}"><i
-                                class="fab fa-instagram text-white"></i></a>
+                        <a target="_blank" class="btn btn-primary btn-sm-square rounded-circle me-3"
+                            href="{{ $about[0]->facebook }}"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a target="_blank" class="btn btn-primary btn-sm-square rounded-circle me-3"
+                            href="{{ $about[0]->instagram }}"><i class="fab fa-instagram text-white"></i></a>
                     </div>
                 </div>
             </div>

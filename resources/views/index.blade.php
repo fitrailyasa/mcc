@@ -9,11 +9,5 @@
 
     @include('components.services')
 
-    {{-- @include('components.features') --}}
-
-    {{-- @include('components.offer') --}}
-
-    {{-- @include('components.team') --}}
-
     @include('components.testimonial')
 @endsection

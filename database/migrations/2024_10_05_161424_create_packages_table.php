@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name')->unique();
             $table->string('slug')->unique();
             $table->text('desc')->nullable();
+            $table->integer('price');
             $table->string('img')->nullable();
             $table->foreignId('category_id')->nullable();
             $table->timestamps();

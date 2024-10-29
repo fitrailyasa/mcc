@@ -5,10 +5,7 @@
             <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
                 <div>
                     <h4 class="text-primary">About Us</h4>
-                    <h1 class="display-5 mb-4">Unveil Your Postpartum Journey with Our Tailored Packages!</h1>
-                    <p class="mb-4">Your Postpartum Journey Begins Here with Government-Registered Confinement Ladies!
-                        Book Online or Drop In Today!Your Postpartum Journey Begins Here with Government-Registered
-                        Confinement Ladies! Book Online or Drop In Today!
+                    <h1 class="display-5 mb-4">{{ $about[0]->description }}</h1>
                     </p>
                     <div class="row g-4">
                         <div class="col-sm-6">
@@ -16,12 +13,12 @@
                                 <i class="fab fa-whatsapp fa-2x text-primary me-4"></i>
                                 <div>
                                     <h4>Chat Us</h4>
-                                    <p class="mb-0 fs-5" style="letter-spacing: 1px;">{{ $whatsapp }}</p>
+                                    <p class="mb-0 fs-5" style="letter-spacing: 1px;">{{ $about[0]->whatsapp }}</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <a href="https://wa.me/{{ $whatsapp }}"
+                            <a href="https://wa.me/{{ $about[0]->whatsapp }}"
                                 class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Chat
                                 Now</a>
                         </div>

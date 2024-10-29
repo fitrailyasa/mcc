@@ -14,7 +14,7 @@
                                     </div>
                                     <div>
                                         <h4>Address</h4>
-                                        <p class="mb-0">{{ $address }}</p>
+                                        <p class="mb-0">{{ $about[0]->address }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -25,7 +25,7 @@
                                     </div>
                                     <div>
                                         <h4>Mail Us</h4>
-                                        <p class="mb-0">{{ $email }}</p>
+                                        <p class="mb-0">{{ $about[0]->email }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@
                                     </div>
                                     <div>
                                         <h4>Whatsapp</h4>
-                                        <p class="mb-0">{{ $whatsapp }}</p>
+                                        <p class="mb-0">{{ $about[0]->whatsapp }}</p>
                                     </div>
                                 </div>
                             </div>
