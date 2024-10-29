@@ -29,13 +29,29 @@ class HomeController extends Controller
     public function about()
     {
         $about = About::first()->get();
-        return view('pages.about', compact('about'));
+        try {
+            $services = Package::all();
+            $testimonials = Feedback::all();
+        } catch (\Exception $e) {
+            Log::error('Failed to retrieve data: ' . $e->getMessage());
+            $services = collect(); // return an empty collection on failure
+            $testimonials = collect();
+        }
+        return view('pages.about', compact('about', 'services', 'testimonials'));
     }
 
     public function contact()
     {
         $about = About::first()->get();
-        return view('pages.contact', compact('about'));
+        try {
+            $services = Package::all();
+            $testimonials = Feedback::all();
+        } catch (\Exception $e) {
+            Log::error('Failed to retrieve data: ' . $e->getMessage());
+            $services = collect(); // return an empty collection on failure
+            $testimonials = collect();
+        }
+        return view('pages.contact', compact('about', 'services', 'testimonials'));
     }
 
     public function services()
@@ -62,7 +78,15 @@ class HomeController extends Controller
     public function feedback()
     {
         $about = About::first()->get();
-        return view('pages.feedback', compact('about'));
+        try {
+            $services = Package::all();
+            $testimonials = Feedback::all();
+        } catch (\Exception $e) {
+            Log::error('Failed to retrieve data: ' . $e->getMessage());
+            $services = collect(); // return an empty collection on failure
+            $testimonials = collect();
+        }
+        return view('pages.feedback', compact('about', 'services', 'testimonials'));
     }
 
     public function feedbackStore(Request $request)

@@ -6,4 +6,5 @@
 @section('content')
     @include('layouts.header-subpages')
     @include('components.contact')
+    @include('components.services')
 @endsection
