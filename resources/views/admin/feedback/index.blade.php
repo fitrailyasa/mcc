@@ -12,6 +12,7 @@
                 <th>{{ __('Profession') }}</th>
                 <th>{{ __('Review') }}</th>
                 <th>{{ __('Rating') }}</th>
+                <th>{{ __('Action') }}</th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +23,9 @@
                     <td>{{ $feedback->profession ?? '-' }}</td>
                     <td>{{ $feedback->review ?? '-' }}</td>
                     <td>{{ $feedback->rating ?? '-' }}</td>
+                    <td class="manage-row">
+                        @include('admin.feedback.delete')
+                    </td>
                 </tr>
             @endforeach
         </tbody>
@@ -32,6 +36,7 @@
                 <th>{{ __('Profession') }}</th>
                 <th>{{ __('Review') }}</th>
                 <th>{{ __('Rating') }}</th>
+                <th>{{ __('Action') }}</th>
             </tr>
         </tfoot>
     </table>

@@ -14,4 +14,9 @@ class FeedbackController extends Controller
         return view('admin.feedback.index', compact('feedbacks'));
     }
 
+    public function destroy(string $id)
+    {
+        Feedback::findOrFail($id)->delete();
+        return back()->with('alert', 'Success Delete Feedback!');
+    }
 }

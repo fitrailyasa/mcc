@@ -52,6 +52,7 @@ Route::middleware(['auth'])->group(function () {
 
     // CRUD FEEDBACK
     Route::get('/testimoni', [FeedbackController::class, 'index'])->name('feedback.index');
+    Route::delete('/testimoni/destroy/{id}', [FeedbackController::class, 'destroy'])->name('feedback.destroy');
 
     // CRUD ABOUT
     Route::resource('about', AboutController::class)->only(['edit', 'update']);
