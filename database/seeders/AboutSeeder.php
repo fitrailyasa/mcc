@@ -21,7 +21,7 @@ class AboutSeeder extends Seeder
                 'instagram' => 'https://instagram.com/mutiara_confinement',
                 'facebook' => 'https://www.facebook.com/MutiaraConfinement',
                 'email' => 'tarashairsalon12@gmail.com',
-                'address' => 'Jl. Cempaka No. 10, Cempaka Putih',
+                'address' => 'Jalan Tun Perak 6, Taman Tun Perak, 43200 Cheras, Selangor, Malaysia',
             ],
             [
                 'title' => 'Mutiara Confinement Care',
@@ -30,7 +30,7 @@ class AboutSeeder extends Seeder
                 'instagram' => 'https://instagram.com/mutiara_confinement',
                 'facebook' => 'https://www.facebook.com/MutiaraConfinement',
                 'email' => 'tarashairsalon12@gmail.com',
-                'address' => 'Jl. Cempaka No. 10, Cempaka Putih',
+                'address' => 'Jalan Tun Perak 6, Taman Tun Perak, 43200 Cheras, Selangor, Malaysia',
             ],
 
         ];

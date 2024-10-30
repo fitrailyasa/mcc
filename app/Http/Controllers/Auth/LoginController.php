@@ -41,7 +41,7 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        $about = About::first()->get();
+        $about = About::findOrfail('1');
         return view('auth.login', compact('about'));
     }
 }
