@@ -17,7 +17,7 @@ class AboutSeeder extends Seeder
             [
                 'title' => 'Mutiara Confinement Care',
                 'description' => 'Khidmat rawatan dan Penjagaan ibu selepas Bersalin secara tradisional',
-                'whatsapp' => '+6282279909994',
+                'whatsapp' => '+60112415042',
                 'instagram' => 'https://instagram.com/mutiara_confinement',
                 'facebook' => 'https://www.facebook.com/MutiaraConfinement',
                 'email' => 'tarashairsalon12@gmail.com',
@@ -26,7 +26,7 @@ class AboutSeeder extends Seeder
             [
                 'title' => 'Mutiara Confinement Care',
                 'description' => 'Traditional Postpartum Treatment and Care Services for Mothers and Baby',
-                'whatsapp' => '+6282279909994',
+                'whatsapp' => '+60112415042',
                 'instagram' => 'https://instagram.com/mutiara_confinement',
                 'facebook' => 'https://www.facebook.com/MutiaraConfinement',
                 'email' => 'tarashairsalon12@gmail.com',
