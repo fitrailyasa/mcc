@@ -5,7 +5,19 @@
             <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
                 <div>
                     <h4 class="text-primary">Tentang Kami</h4>
-                    <h1 class="display-5 mb-4">{{ $about->description }}</h1>
+                    <p class="text-justify">
+                        Mutiara confinement adalah syarikat yang menawarkan perkhidmatan penjagaan pantang kepada
+                        ibu-ibu yang baru bersalin.
+                    </p>
+                    <p class="text-justify">
+                        Perkhidmatan amalan moden dalam penjagaan postpantrum. Memberi tumpuan kepada ibu yang mendapat
+                        rehat yang cukup, mengambil diet yang seimbang, dan menjaga kesehatan. Kaedah rawatan traditonal
+                        dalam masyarakat Malaysia seperti berurut (massage), bertungku (kompresspanas), berbengkung
+                        (memakai korset atau bally band), bertangas (mandi uap), dan penggunaan herba.
+                    </p>
+                    <p class="text-justify">
+                        Mutiara Confinament menyediakan perkhidmatan menyeluruh untuk ibu dan bayi dari seawal hari
+                        pertama kelahiran hingga penutup pantang.
                     </p>
                     <div class="row g-4">
                         <div class="col-sm-6">
@@ -25,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="col-xl-5 wow d-none d-md-block fadeInRight" data-wow-delay="0.2s">
                 <div class="bg-primary rounded position-relative overflow-hidden">
                     <img src="logo.png" class="img-fluid rounded w-100" alt="">
                 </div>

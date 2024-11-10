@@ -5,7 +5,19 @@
             <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
                 <div>
                     <h4 class="text-primary">About Us</h4>
-                    <h1 class="display-5 mb-4">{{ $about->description }}</h1>
+                    <p class="text-justify">
+                        Mutiara confinement is a company that offers confinement care services to mothers who have just
+                        given birth.
+                    </p>
+                    <p class="text-justify">
+                        Modern practice services in postnatal care. Focusing on mothers getting enough rest, eating a
+                        balanced diet, and taking care of their health. Traditional treatment methods in Malaysian
+                        society such as massage, bending (compresspanas), berbengung (wearing a corset or bally band),
+                        bertangas (steam bath), and the use of herbs.
+                    </p>
+                    <p class="text-justify">
+                        Mutiara Confinament provides comprehensive services for mothers and babies from the first day of
+                        birth to the end of confinement.
                     </p>
                     <div class="row g-4">
                         <div class="col-sm-6">
@@ -25,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="col-xl-5 wow d-none d-md-block fadeInRight" data-wow-delay="0.2s">
                 <div class="bg-primary rounded position-relative overflow-hidden">
                     <img src="logo.png" class="img-fluid rounded w-100" alt="">
                 </div>
